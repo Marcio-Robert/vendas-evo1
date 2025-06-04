@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Método EVO</title>
+
+ <!-- Fonte moderna via Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome local (certifique-se de que o caminho está correto) -->
+<link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
+<!-- Estilo principal -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container">
+      <img src="assets/img/logo-evo.png" alt="Logo Método EVO" class="logo" />
+
+      <h1 class="hero-title">Equilíbrio. Foco. Disciplina.</h1>
+      <p class="hero-subtitle">
+        Assuma o controle da sua mente.<br />
+        Supere a ansiedade, elimine a procrastinação e conquiste sua evolução diária.
+      </p>
+
+      <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">
+        QUERO EVOLUIR AGORA!
+      </a>
+    </div>
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+
+<script>
+  function animarAoScroll() {
+    const elementos = document.querySelectorAll('.fade-in-up');
+
+    elementos.forEach(el => {
+      const topoElemento = el.getBoundingClientRect().top;
+      const alturaTela = window.innerHeight * 0.85;
+
+      if (topoElemento < alturaTela) {
+        el.classList.add('ativo');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animarAoScroll);
+  window.addEventListener('load', animarAoScroll);
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+
+</body>
+</html>
+
+<!-- SOBRE O MÉTODO EVO -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <h2 class="section-title">O que é o Método EVO?</h2>
+    
+    <p class="sobre-text">
+      O Método EVO é mais do que um simples material de autoajuda.<br><br>
+      É um sistema prático, direto e validado que combina técnicas de produtividade, foco mental e controle emocional. Tudo reunido para te tirar da estagnação e colocar você no caminho da evolução pessoal.<br><br>
+      Criado para pessoas que não aceitam mais viver no piloto automático, o Método EVO entrega resultados reais para quem busca transformar de verdade a sua rotina, sua mente e sua vida.
+    </p>
+
+    <ul class="benefits-list">
+      <li> Reduza a ansiedade e aumente sua clareza mental</li>
+      <li> Elimine a procrastinação com estratégias práticas</li>
+      <li> Construa disciplina e produtividade sem sofrimento</li>
+      <li> Alcance equilíbrio entre mente, rotina e emoções</li>
+    </ul>
+
+    <div class="pilares">
+      <div class="pilar">
+        <img src="assets/img/equilibrio.png" alt="Ícone Equilíbrio">
+        <h3>Equilíbrio</h3>
+        <p>Domine suas emoções e mantenha estabilidade nos momentos de pressão.</p>
+      </div>
+      <div class="pilar">
+        <img src="assets/img/foco.png" alt="Ícone Foco">
+        <h3>Foco</h3>
+        <p>Direcione sua energia para o que realmente importa e atinja seus objetivos com mais eficiência.</p>
+      </div>
+      <div class="pilar">
+        <img src="assets/img/disciplina.png" alt="Ícone Disciplina">
+        <h3>Disciplina</h3>
+        <p>Crie hábitos sólidos que te levem à evolução contínua, dia após dia.</p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 3 – A Dor do Público -->
+<section class="secao-escura" id="dor-publico">
+  <div class="container">
+    <h2 class="section-title">❌ Você sente que está perdendo o controle?</h2>
+
+    <ul class="lista-dores">
+      <li>Você acorda cansado, vive atrasado e se perde no próprio dia.</li>
+      <li>Diz que vai mudar… mas continua afundado na procrastinação.</li>
+      <li>Finge que tá tudo bem, mas mal consegue se concentrar 10 minutos.</li>
+      <li>A ansiedade domina sua mente, e você não consegue desligar.</li>
+      <li>Sente que poderia estar muito além... mas tá estagnado, travado, paralisado.</li>
+    </ul>
+
+    <p class="transicao-dor">
+      Você não nasceu pra viver empacado.<br>
+      Se algo dentro de você quer gritar por mudança...<br>
+      <strong>Então é hora de fazer algo REAL a respeito.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- SEÇÃO 4 – Visão Transformacional -->
+<section class="secao-escura" id="transformacao">
+  <div class="container">
+    <h2 class="section-title">Imagine como seria...</h2>
+
+    <ul class="lista-transformacao">
+      <li>Acordar e saber exatamente o que precisa fazer.</li>
+      <li>Trabalhar com foco total, sem ser dominado pela ansiedade ou pela procrastinação.</li>
+      <li>Dormir com a sensação de dever cumprido, sem culpa, sem estresse.</li>
+      <li>Ter disciplina de verdade, não por força de vontade, mas porque virou parte de quem você é.</li>
+      <li>Controlar seus dias, sua mente, seu tempo.</li>
+      <li>E principalmente: Voltar a sentir orgulho de você.</li>
+    </ul>
+
+    <p class="transicao-transformacao">
+      Essa transformação não é ilusão. <br><strong>É método.</strong><br>
+      E ela começa no primeiro passo...
+    </p>
+
+ <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">QUERO MUDAR JÁ!</a>
+
+    </a>
+  </div>
+</section>
+
+<!-- SEÇÃO 5 – Por que você ainda não conseguiu mudar? -->
+<section class="secao-escura" id="porque-nao-mudou">
+  <div class="container">
+    <h2 class="titulo-destaque">❌ Por que você ainda não conseguiu mudar?</h2>
+
+    <p class="paragrafo-enfase">Não é porque você é fraco.<br>
+    Não é porque te falta força de vontade.<br>
+    E muito menos porque “você não nasceu pra isso”.</p>
+
+    <h3 class="subtitulo">A verdade é brutal:</h3>
+    <p>Você está preso em um ciclo de repetição.<br>
+    Tenta mudar, mas volta aos mesmos hábitos.<br>
+    Promete que "segunda começa", mas segunda nunca chega.</p>
+
+    <h3 class="subtitulo">Isso não é preguiça. Isso é ausência de método, direção e constância.</h3>
+    <p>Sem isso, qualquer tentativa vira frustração.<br>
+    E cada frustração aumenta a culpa e a ansiedade.</p>
+
+    <h3 class="subtitulo">É por isso que o Método EVO existe.</h3>
+    <p>Para quebrar esse ciclo na marra e devolver o controle pra sua vida.</p>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="botao-primario">QUERO SAIR DESSE CICLO AGORA!</a>
+    <p class="reforco-botao">Você merece mais do que só sobreviver aos dias.</p>
+  </div>
+</section>
+
+<!-- Seção 6: O Que Está Incluso no EVO -->
+<section class="secao-incluso" id="incluso-evo">
+  <div class="container">
+    <h2>Tudo o que você leva ao ativar o Modo EVO</h2>
+    <p class="subtitulo">Você não está comprando um simples método.<br>Está acessando uma central de transformação com ferramentas reais para mudar sua vida!</p>
+
+    <!-- BLOCO 1: Conteúdo Principal -->
+    <div class="bloco-conteudo">
+      <h3 class="bloco-titulo">O Método EVO começa com o que realmente transforma.</h3>
+      <p class="bloco-frase">Esses são os 3 pilares que vão reconstruir sua rotina, sua mente e sua produtividade.</p>
+
+      <div class="cards-incluso">
+        <!-- Item 1 -->
+        <div class="card-incluso destaque">
+          <img src="assets/img/ansiedade.png" alt="Ícone Ansiedade">
+          <h3>🧠 Enfrentando a Ansiedade</h3>
+          <p>Aprenda a controlar seus gatilhos mentais e a dominar sua ansiedade com técnicas embasadas na psicologia moderna.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card-incluso destaque">
+          <img src="assets/img/produtividade.png" alt="Ícone Produtividade">
+          <h3>⚡ Maximizando a Produtividade</h3>
+          <p>Rotinas inteligentes, hacks de foco e estratégias para fazer mais em menos tempo. Resultado sem sobrecarga.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card-incluso destaque">
+          <img src="assets/img/procrastinacao.png" alt="Ícone Procrastinação">
+          <h3>⏳ Vencendo a Procrastinação</h3>
+          <p>A fórmula prática para acabar com a enrolação, sair do piloto automático e agir com clareza.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 2: Bônus -->
+    <div class="bloco-conteudo">
+      <h3 class="bloco-titulo">Ganhe acesso imediato a bônus que potencializam sua evolução.</h3>
+      <p class="bloco-frase">São ferramentas completas que sozinhas já valeriam mais que o valor do método, mas você leva tudo de forma imediata, só durante o lançamento.</p>
+
+      <div class="cards-incluso">
+        <!-- Bônus 1 -->
+        <div class="card-incluso">
+          <img src="assets/img/mindfulness.png" alt="Ícone Mindfulness">
+          <h3>🎧 Mindfulness na Prática</h3>
+          <p>Kit de Vídeo-Áudios poderosos para te ajudar a controlar a mente, respirar melhor e manter o equilíbrio emocional nos momentos mais difíceis.</p>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div class="card-incluso">
+          <img src="assets/img/crise.png" alt="Ícone Crise de Ansiedade">
+          <h3>🔥 Guia de Crise de Ansiedade</h3>
+          <p>Conteúdo direto ao ponto para identificar e conter uma crise antes que ela te paralise. Assista ou leia em minutos.</p>
+        </div>
+
+        <!-- Bônus 3 -->
+        <div class="card-incluso">
+          <img src="assets/img/cronograma.png" alt="Ícone Cronograma">
+          <h3>🧩 Cronograma Anti-Procrastinação</h3>
+          <p>Plano mensal prático para organizar sua rotina, vencer a preguiça e manter constância com clareza.</p>
+        </div>
+
+        <!-- Bônus 4 -->
+        <div class="card-incluso">
+          <img src="assets/img/planner.png" alt="Ícone Planner Metas">
+          <h3>🎯 Metas SMART + Planner Pessoal</h3>
+          <p>Crie objetivos alcançáveis e se organize com modelos de planner diário, semanal, mensal e financeiro.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <p class="observacao">Obs: Todos os materiais são 100% digitais e liberados automaticamente após a compra.</p>
+    <p class="cta-frase">Ou você continua adiando sua mudança…<br>ou começa agora a sua evolução.</p>
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">QUERO ACESSO A TUDO ISSO AGORA!</a>
+  </div>
+</section>
+
+<!-- Seção 7: Como Funciona o Método EVO -->
+<section class="secao-funcionamento" id="como-funciona">
+  <div class="container">
+    <h2>Como Funciona o Método EVO</h2>
+    <p class="subtitulo">Pare de buscar fórmulas mágicas. Aqui, você vai aplicar.</p>
+
+    <p class="intro-impacto">
+      Você não precisa de mais motivação.<br>
+      Não precisa de frases prontas.<br>
+      E muito menos de mais um conteúdo que você nunca vai colocar em prática.
+    </p>
+
+    <p class="realcado">
+      O Método EVO é simples: você assiste, entende e executa.<br>
+      A transformação acontece quando você coloca o plano em ação...<br>
+      e esse plano já está pronto pra você!
+    </p>
+
+    <div class="passos-evo">
+      <div class="passo">
+        <h3>1. Assista às aulas com foco nos 3 pilares</h3>
+        <p>Você vai direto ao ponto com vídeos objetivos sobre ansiedade, procrastinação e produtividade.<br>
+        <strong>Nada de enrolação. É o que você precisa ouvir pra mudar.</strong></p>
+      </div>
+
+      <div class="passo">
+        <h3>2. Entenda como aplicar as técnicas no seu dia a dia</h3>
+        <p>Cada aula tem exemplos reais, linguagem simples e instruções práticas.<br>
+        <strong>Você sai com clareza do que fazer no mesmo dia.</strong></p>
+      </div>
+
+      <div class="passo">
+        <h3>3. Use os bônus estratégicos pra colocar tudo em prática</h3>
+        <p>Áudios de foco, cronograma anti-procrastinação, planners, guias e técnicas.<br>
+        <strong>Tudo desenhado pra te tirar do lugar.</strong></p>
+      </div>
+
+      <div class="passo">
+        <h3>4. Crie sua própria rotina de evolução</h3>
+        <p>Você vai aplicar as técnicas no seu ritmo, com constância, e ver os resultados surgirem na sua disciplina, na sua mente e na sua vida.</p>
+      </div>
+    </div>
+
+    <p class="frase-impacto">Se você fizer exatamente o que mostramos, sua vida não fica igual. <strong>Ela evolui.</strong></p>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">Liberar agora meu acesso ao Método EVO!</a>
+  </div>
+</section>
+
+<!-- Seção 8: Para quem é (e para quem não é) o Método EVO -->
+<section class="secao-publico" id="publico-evo">
+  <div class="container">
+    <h2>Esse método não é pra qualquer um.</h2>
+    <p class="subtitulo">É pra quem cansou de se sabotar.</p>
+
+    <div class="publico-bloco">
+      <h3>✅ Para quem é o Método EVO:</h3>
+      <ul class="lista-positiva">
+        <li>🔹 Pessoas que se sentem estagnadas, mesmo querendo evoluir.</li>
+        <li>🔹 Quem já tentou mudar sozinho, mas sempre volta aos mesmos padrões.</li>
+        <li>🔹 Quem sofre com ansiedade, procrastinação e falta de foco.</li>
+        <li>🔹 Quem busca ações práticas, e não mais teoria vazia.</li>
+        <li>🔹 Quem tá disposto a seguir um plano simples, aplicar e colher os resultados.</li>
+      </ul>
+    </div>
+
+    <div class="publico-bloco negativo">
+      <h3>❌ Para quem NÃO é:</h3>
+      <ul class="lista-negativa">
+        <li>🚫 Quem acha que vai mudar de vida só assistindo vídeos.</li>
+        <li>🚫 Quem espera resultados sem esforço.</li>
+        <li>🚫 Quem quer uma “motivação temporária” e não uma Transformação Real.</li>
+        <li>🚫 Quem prefere continuar reclamando do que agindo.</li>
+      </ul>
+    </div>
+
+    <p class="frase-filtro">
+      Se você está pronto pra assumir o controle da sua mente, sua rotina e sua vida…<br>
+      <strong>Você é exatamente quem o Método EVO veio transformar.</strong>
+    </p>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">Quero assumir o controle agora</a>
+  </div>
+</section>
+
+<!-- Seção 9: O Que Diz a Ciência -->
+<section class="secao-ciencia" id="ciencia-evo">
+  <div class="container">
+    <h2>A Verdade Científica por Trás da Sua Estagnação</h2>
+    <p class="subtitulo">"Ansiedade, procrastinação e caos mental não são frescura. A ciência confirma: eles estão destruindo"</p>
+
+    <p class="texto-intro">
+      O Método EVO nasceu da união entre psicologia aplicada, neurociência e práticas reais de performance pessoal.<br>
+      Você não está sozinho. O que você sente tem explicação. E, mais importante ainda, tem solução.<br><br>
+      <strong>Veja o que os estudos mais sérios dizem:</strong>
+    </p>
+
+    <div class="blocos-ciencia">
+
+      <div class="bloco-ciencia">
+        <h3>📊 Dados sobre Ansiedade</h3>
+        <p>Segundo a Organização Mundial da Saúde (OMS), o Brasil é o país com maior taxa de pessoas ansiosas do mundo. Isso afeta o foco, as decisões e a produtividade de forma silenciosa e devastadora.</p>
+      </div>
+
+      <div class="bloco-ciencia">
+        <h3>⏱️ Dados sobre Procrastinação</h3>
+        <p>De acordo com a Universidade de Calgary, mais de 95% das pessoas procrastinam. E isso está diretamente ligado à ansiedade, desorganização e baixa autoestima.</p>
+      </div>
+
+      <div class="bloco-ciencia">
+        <h3>✅ Organização e Constância</h3>
+        <p>Estudos mostram que pessoas que seguem um método com metas, rotinas e acompanhamento têm até 10x mais chances de alcançar resultados do que aquelas que dependem de força de vontade sozinhas.</p>
+      </div>
+
+    </div>
+
+    <p class="frase-fechamento">
+      A ciência mostra o problema...<br>
+      <strong>O Método EVO te dá a solução prática, simples e aplicável.</strong>
+    </p>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta">Quero um método validado para mudar de vida!</a>
+  </div>
+</section>
+
+<!-- Seção 10: Oferta Especial -->
+<section class="secao-oferta" id="oferta-evo">
+  <div class="container">
+    <h2>Essa pode ser a última vez que você vê o EVO por esse valor</h2>
+
+    <p class="texto-oferta">
+      Você já sabe que precisa mudar. E agora, sabe também que tem um método claro pra isso.<br>
+      A oportunidade está aqui. Com acesso imediato, vitalício e com um preço promocional exclusivo.
+    </p>
+
+    <h3 class="subtitulo-oferta">O valor REAL do que você está levando:</h3>
+
+    <div class="cards-conteudo">
+  <div class="card-item">
+    <h4>✅ Transformação contra a Ansiedade</h4>
+    <p>Reprograme sua mente e acabe com o ciclo da ansiedade.</p>
+    <span class="preco-card destaque">R$297</span>
+  </div>
+  <div class="card-item">
+    <h4>✅ Técnica para vencer a Procrastinação</h4>
+    <p>Supere a paralisia e entre em ação com clareza.</p>
+    <span class="preco-card destaque">R$297</span>
+  </div>
+  <div class="card-item">
+    <h4>✅ Método para dominar a Produtividade</h4>
+    <p>Foco total, organização e consistência no dia a dia.</p>
+     <span class="preco-card destaque">R$297</span>
+  </div>
+  <div class="card-item">
+    <h4>🎧 Bônus 1: Áudios de Mindfulness</h4>
+    <p>Práticas guiadas para desacelerar e recuperar o controle.</p>
+        <span class="preco-card">R$297</span>
+  </div>
+  <div class="card-item">
+    <h4>📘 Bônus 2: Guia contra Crises de Ansiedade</h4>
+    <p>Ferramentas práticas para momentos críticos.</p>
+        <span class="preco-card">R$197</span>
+  </div>
+  <div class="card-item">
+    <h4>📅 Bônus 3: Guia + Cronograma Anti-Procrastinação</h4>
+    <p>Plano de ação para manter o ritmo com leveza.</p>
+        <span class="preco-card">R$197</span>
+  </div>
+  <div class="card-item">
+    <h4>📝 Bônus 4: Metas SMART + Planner Pessoal</h4>
+    <p>Organize metas reais e acompanhe seu progresso.</p>
+        <span class="preco-card">R$247</span>
+  </div>
+</div>
+
+
+    <p class="valor-total">Valor total do Método EVO completo: <strong>R$1.829,00</strong></p>
+
+    <h3 class="subtitulo-oferta">Mas se você decidir hoje…</h3>
+    <p class="frase-desconto">
+      Você não vai pagar R$1.829,00<br>
+      nem R$997, nem mesmo R$297...
+    </p>
+
+    <div class="mini-secao oferta-lancamento">
+      <div class="selo-oferta">🔥 SOMENTE HOJE!</div>
+  <h4>🚀 Oferta Exclusiva de Lançamento</h4>
+  <p class="preco">
+    <span class="preco-avista">Apenas R$147,00 à vista</span><br>
+    ou em até 12x no cartão.<br>
+    Acesso imediato e vitalício a todo o conteúdo.
+  </p>
+</div>
+
+    <div class="mini-secao garantia">
+      <h4>🔒 Garantia de 7 dias incondicional</h4>
+      <p>Teste o Método EVO sem medo.<br>
+      Se não servir pra você, é só pedir o reembolso.<br>
+      <strong>Sem perguntas. Sem estresse.</strong></p>
+    </div>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta destaque">Quero pagar só R$147 e começar agora!</a>
+  </div>
+</section>
+
+<!-- Seção 11: FAQ com acordeão -->
+<section class="secao-faq" id="faq">
+  <div class="container">
+    <h2>Perguntas que você pode estar se fazendo agora:</h2>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ Como vou acessar o Método EVO depois da compra?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>Você receberá um e-mail com login e senha para acessar a área exclusiva de membros. Tudo é 100% online e liberado imediatamente.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ Preciso ter muito tempo livre pra aplicar o Método EVO?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>Não! As aulas são curtas e diretas. Você pode começar aplicando com poucos minutos por dia. O importante é a constância, não a quantidade de tempo.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ Funciona mesmo pra mim que já tentei várias coisas e nada deu certo?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>Sim. O EVO foi criado exatamente para quem está cansado de soluções rasas. Aqui, você aplica o que aprende com métodos práticos e funcionais.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ Preciso pagar mensalidade?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>Não! Você paga apenas uma vez e tem acesso vitalício a todo o conteúdo, incluindo os bônus.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ E se eu me arrepender?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>Você tem 7 dias de garantia incondicional. Se achar que não é pra você, é só pedir reembolso e receber 100% do valor de volta. Sem complicações.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-pergunta">❓ Sou iniciante. Vai ser difícil entender?
+        <span class="faq-icone">▼</span>
+      </button>
+      <div class="faq-resposta">
+        <p>De forma alguma. O conteúdo é direto, objetivo e sem linguagem técnica. Tudo foi feito pra ser simples de entender e fácil de aplicar.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.querySelectorAll('.faq-pergunta').forEach(botao => {
+    botao.addEventListener('click', () => {
+      const resposta = botao.nextElementSibling;
+      const ativo = resposta.style.maxHeight;
+      const icone = botao.querySelector('.faq-icone');
+
+      // Fecha todos os outros
+      document.querySelectorAll('.faq-resposta').forEach(r => {
+        r.style.maxHeight = null;
+        r.style.paddingBottom = 0;
+      });
+      document.querySelectorAll('.faq-icone').forEach(i => {
+        i.style.transform = "rotate(0deg)";
+      });
+
+      // Abre ou fecha o atual
+      if (!ativo || ativo === "0px") {
+        resposta.style.maxHeight = resposta.scrollHeight + "px";
+        resposta.style.paddingBottom = "1rem";
+        icone.style.transform = "rotate(180deg)";
+      } else {
+        resposta.style.maxHeight = null;
+        resposta.style.paddingBottom = 0;
+        icone.style.transform = "rotate(0deg)";
+      }
+    });
+  });
+</script>
+</section>
+
+<!-- Seção 12: Final Emocional -->
+<section class="secao-final" id="ultima-chance">
+  <div class="container">
+    <h2 class="titulo-final fade-in-up">A Última Decisão Está em Suas Mãos</h2>
+
+    <div class="linha-azul fade-in-up"></div>
+
+    <h3 class="subtitulo-final fade-in-up">Ou você muda agora… ou continua repetindo tudo de novo.</h3>
+    <p class="texto-final fade-in-up">
+      Quantas vezes você já prometeu que iria mudar?<br>
+      Quantas vezes se frustrou por continuar no mesmo lugar?
+    </p>
+
+    <h3 class="subtitulo-final fade-in-up">Você já entendeu o que te trava.</h3>
+    <p class="texto-final fade-in-up">
+      Já viu que existe um método prático, validado, direto.<br>
+      Agora só falta a parte mais difícil: decidir que dessa vez vai ser diferente.
+    </p>
+
+    <p class="texto-final fade-in-up">
+      E se você ignorar essa oportunidade, nada vai mudar.<br>
+      As mesmas desculpas. A mesma estagnação.<br>
+      A diferença? Você vai saber que teve a chance de sair disso. E não aproveitou.
+    </p>
+
+    <h3 class="subtitulo-final fade-in-up">A evolução exige atitude.</h3>
+    <p class="texto-final fade-in-up">
+      Se for pra dar o próximo passo, que seja agora.
+    </p>
+
+    <p class="reforco-emocional fade-in-up">
+      Você merece viver sem se sabotar.<br>
+      E agora é a hora.
+    </p>
+
+    <a href="https://pay.kiwify.com.br/3PDGyBv" class="btn-cta btn-final destaque grande fade-in-up">
+      QUERO ASSUMIR O CONTROLE DA MINHA VIDA AGORA!
+    </a>
+
+    <p class="pos-botao fade-in-up">
+      Depois disso, você não poderá dizer que não teve a oportunidade.
+    </p>
+  </div>
+</section>
+
+<!-- RODAPÉ FINAL -->
+<footer class="rodape">
+  <div class="container">
+    <p class="copyright">©2025 Método EVO. Todos os direitos reservados.</p>
+    <div class="icones-sociais">
+      <a href="https://wa.me/message/A5GIW3AZTGOPM1" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+      </a>
+      <a href="https://www.instagram.com/metodo_evo?igsh=d2owbW8zOWI1NGV4" target="_blank" aria-label="Instagram">
+        <i data-lucide="instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts do Lucide -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
