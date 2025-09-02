@@ -1,0 +1,1321 @@
+/* === VARIÁVEIS DE COR === */
+:root {
+  --azul: #3d37ff;
+  --preto: #000000;
+  --branco: #ffffff;
+  --cinza-claro: #bfbfbf;
+}
+
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo padrão do site */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+   background-color: var(--preto);
+  background-image: radial-gradient(circle at top left, #3d37ff20 0%, transparent 70%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--branco);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+
+/* Classe padrão de seção escura */
+.secao-escura {
+  background: transparent;
+  color: var(--branco);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+
+/* === CONTAINER PADRÃO === */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: transparent;
+  color: var(--branco);
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.hero .logo {
+  max-width: 300px;
+  margin-bottom: 0rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--azul);
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--cinza-claro);
+  margin-bottom: 2.5rem;
+}
+
+/* === BOTÃO CTA === */
+.btn-cta {
+  display: inline-block;
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #2e2be6;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* === SEÇÃO SOBRE O MÉTODO EVO === */
+.sobre {
+  background: transparent;
+  color: var(--branco);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--azul);
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.sobre-text {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  color: var(--cinza-claro);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Lista de benefícios */
+.benefits-list {
+  list-style: none;
+  margin-bottom: 3rem;
+  color: var(--branco);
+  font-size: 1.05rem;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.benefits-list li::before {
+  content: '✅';
+  position: absolute;
+  left: 0;
+}
+
+/* Bloco dos 3 Pilares */
+.pilares {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.pilar {
+  background-color: #0f0f0f;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 340px;
+  text-align: center;
+  border: 1px solid #272727;
+  box-shadow: 0 0 20px rgba(61, 55, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pilar:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(61, 55, 255, 0.25);
+}
+
+.pilar img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 8px rgba(61, 55, 255, 0.3));
+}
+
+.pilar h3 {
+  font-size: 1.4rem;
+  color: var(--azul);
+  margin-bottom: 0.7rem;
+}
+
+.pilar p {
+  font-size: 1.05rem;
+  color: var(--cinza-claro);
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .pilares {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-list {
+    text-align: left;
+  }
+}
+
+.pilar-img-wrapper {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.2rem;
+  background: radial-gradient(circle, rgba(61,55,255,0.2), transparent 70%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* (NOVA) Seção Conheça o Especialista */
+.especialista { 
+  background: transparent; /* fundo transparente */
+  color: #fff;
+  padding: 1rem 1rem;
+}
+
+.especialista .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.especialista-headline {
+  font-size: 2.2rem;
+  color: #3d37ff; /* azul elétrico */
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.especialista-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.especialista-foto {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.especialista-foto img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  border: 3px solid #3d37ff;
+  box-shadow: 0 0 20px rgba(61, 55, 255, 0.4);
+}
+
+.especialista-texto {
+  flex: 2 1 500px;
+}
+
+.especialista-texto h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.especialista-texto h3 span {
+  color: #3d37ff;
+  font-weight: bold;
+}
+
+.especialista-texto p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #bfbfbf; /* cinza para leitura */
+}
+
+.especialista-credenciais {
+  margin-top: 60px;
+  background: rgba(61, 55, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  border-left: 4px solid #3d37ff;
+}
+
+.especialista-credenciais h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.especialista-credenciais ul {
+  list-style: none;
+  padding: 0;
+}
+
+.especialista-credenciais ul li {
+  font-size: 1rem;
+  color: #bfbfbf;
+  margin-bottom: 12px;
+}
+
+
+
+/* SEÇÃO 3 – Dor do Público */
+
+.dor-publico {
+  background: transparent;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.dor-publico .section-title {
+  color: var(--branco);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.lista-dores {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.lista-dores li {
+  color: var(--cinza-claro);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.lista-dores li::before {
+  content: "⚠️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.transicao-dor {
+  color: var(--branco);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.transicao-dor strong {
+  color: var(--azul);
+}
+
+/* SEÇÃO 4 – Transformação */
+.transformacao {
+  background: transparent;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.lista-transformacao {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.lista-transformacao li {
+  color: var(--branco);
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.lista-transformacao li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.transicao-transformacao {
+  color: var(--cinza-claro);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.transicao-transformacao strong {
+  color: var(--azul);
+}
+
+/* Ajuste de responsividade do botão */
+.cta-btn.grande {
+  background-color: var(--azul);
+  color: var(--branco);
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 480px) {
+  .cta-btn.grande {
+    font-size: 1rem;
+    padding: 0.9rem 1.4rem;
+    white-space: normal;
+  }
+}
+
+/* Seção 5 - Por que você ainda não conseguiu mudar */
+#porque-nao-mudou {
+  background-color: transparent;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+#porque-nao-mudou .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#porque-nao-mudou .titulo-destaque {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--azul);
+  margin-bottom: 2rem;
+}
+
+#porque-nao-mudou .paragrafo-enfase {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--branco);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+#porque-nao-mudou .subtitulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cinza-claro);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#porque-nao-mudou p {
+  font-size: 1rem;
+  color: var(--branco);
+  margin: 0 auto 1.5rem auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+#porque-nao-mudou .botao-primario {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--branco);
+  background-color: var(--azul);
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px #3d37ff80;
+}
+
+#porque-nao-mudou .botao-primario:hover {
+  background-color: #2d2aff;
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #3d37ffb3;
+}
+
+#porque-nao-mudou .reforco-botao {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--cinza-claro);
+}
+
+
+/* SEÇÃO 9 (subiu) - O que diz a ciência a respeito da ansiedade */
+.secao-ciencia {
+  background: transparent;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.secao-ciencia h2 {
+  font-size: 2.3rem;
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.secao-ciencia .subtitulo {
+  color: var(--cinza-claro);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+}
+
+.texto-intro {
+  color: var(--branco);
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.blocos-ciencia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.bloco-ciencia {
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--branco);
+  box-shadow: 0 0 15px #3d37ff10;
+  text-align: left;
+}
+
+.bloco-ciencia h3 {
+  font-size: 1.2rem;
+  color: var(--azul);
+  margin-bottom: 0.5rem;
+}
+
+.bloco-ciencia p {
+  color: var(--cinza-claro);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.frase-fechamento {
+  font-size: 1.1rem;
+  color: var(--branco);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.frase-fechamento strong {
+  color: var(--azul);
+}
+
+
+/* ===== Seção 6: O Que Está Incluso no EVO ===== */
+.secao-incluso {
+  background: transparent;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.secao-incluso h2 {
+  font-size: 2.5rem;
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.secao-incluso .subtitulo {
+  color: var(--cinza-claro);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pilares {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 3rem;
+}
+
+/* Layout em 3 colunas */
+.entrega-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.entrega-card {
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--branco);
+  box-shadow: 0 0 20px #3d37ff20;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entrega-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #3d37ff40;
+}
+
+.entrega-card .icone {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.entrega-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--azul);
+}
+
+.entrega-card p {
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  line-height: 1.5;
+}
+
+/* Lista de bônus */
+.bonus-bloco {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bonus-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--branco);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bonus-lista {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  line-height: 1.7;
+}
+
+.bonus-lista li {
+  margin-bottom: 0.8rem;
+}
+
+/* Observação e CTA */
+.observacao {
+  font-size: 0.9rem;
+  color: var(--cinza-claro);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-frase {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--branco);
+}
+
+.btn-cta {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn-cta:hover {
+  background-color: #2e2aff;
+  transform: scale(1.05);
+}
+
+
+/* SEÇÃO 7 - COMO FUNCIONA O MÉTODO EVO */
+.secao-funcionamento {
+  background: transparent;
+  padding: 1.5rem 1rem 1rem;
+  text-align: center;
+}
+
+.secao-funcionamento h2 {
+  font-size: 2.5rem;
+  color: var(--branco);
+  margin-bottom: 1rem;
+}
+
+.secao-funcionamento .subtitulo {
+  color: var(--cinza-claro);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secao-funcionamento .intro-impacto {
+  color: var(--branco);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.secao-funcionamento .realcado {
+  background-color: #1a1a1a;
+  border: 1px solid var(--azul);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  color: var(--branco);
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  box-shadow: 0 0 20px #3d37ff25;
+  line-height: 1.6;
+}
+
+.passos-evo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.passo {
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--cinza-claro);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #3d37ff15;
+}
+
+.passo h3 {
+  color: var(--azul);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.passo p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.frase-impacto {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--branco);
+  margin-bottom: 2rem;
+}
+
+.frase-impacto strong {
+  color: var(--azul);
+}
+
+/* Botão CTA padrão */
+.btn-cta {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn-cta:hover {
+  background-color: #2e2aff;
+  transform: scale(1.05);
+}
+
+/* Seção 8: Para quem é e para quem não é */
+.secao-publico {
+  background: transparent;
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.secao-publico h2 {
+  font-size: 2.3rem;
+  color: var(--branco);
+  margin-bottom: 0.5rem;
+}
+
+.secao-publico .subtitulo {
+  color: var(--cinza-claro);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.publico-bloco {
+  background-color: #121212;
+  border-left: 4px solid var(--azul);
+  box-shadow: 0 0 20px #3d37ff10;
+  padding: 2rem;
+  margin: 0 auto 2.5rem auto;
+  border-radius: 1rem;
+  max-width: 700px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.publico-bloco:hover {
+  box-shadow: 0 0 25px #3d37ff30;
+}
+
+.publico-bloco h3 {
+  font-size: 1.3rem;
+  color: var(--azul);
+  margin-bottom: 1rem;
+}
+
+.publico-bloco.negativo {
+  border-left: 4px solid #ff4d4f;
+}
+
+
+.lista-positiva,
+.lista-negativa {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-positiva li,
+.lista-negativa li {
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.frase-filtro {
+  color: var(--branco);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Botão padrão */
+.btn-cta {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn-cta:hover {
+  background-color: #2e2aff;
+  transform: scale(1.05);
+}
+
+/* Seção (NOVA) Prova Social */
+.prova-social {
+  background: transparent; /* fundo transparente */
+  color: #fff;
+  padding: 1rem 1rem;
+}
+
+.prova-social .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prova-headline {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+  color: #3d37ff; /* azul elétrico */
+}
+
+.prints-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.print-bloco {
+  background: rgba(61, 55, 255, 0.05);
+  border: 1px solid rgba(61, 55, 255, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.print-bloco:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(61, 55, 255, 0.4);
+}
+
+.print-bloco h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.print-bloco img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #3d37ff;
+}
+
+
+/* SEÇÃO 10 - Oferta Especial + Ancoragem de Valor + Urgência + Garantia */
+.secao-oferta {
+  background: transparent;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+.secao-oferta h2 {
+  font-size: 2.2rem;
+  color: var(--azul);
+  margin-bottom: 1.2rem;
+}
+
+.texto-oferta {
+  color: var(--cinza-claro);
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.subtitulo-oferta {
+  font-size: 1.2rem;
+  color: var(--branco);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+@media (min-width: 600px) {
+  .cards-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-item {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #3d37ff10;
+  text-align: center;
+  position: relative;
+  color: var(--branco);
+}
+
+.card-item h4 {
+  font-size: 1rem;
+  color: var(--azul);
+  margin-bottom: 0.3rem;
+}
+
+.card-item p {
+  font-size: 0.9rem;
+  color: var(--cinza-claro);
+  margin-bottom: 1.2rem;
+}
+
+.preco-card {
+  display: inline-block;
+  background-color: #00e0ff22;
+  color: var(--branco);
+  padding: 0.1rem 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 999px;
+  border: 1px solid #00e0ff66;
+  margin: 0.5rem auto 0 auto; /* centraliza horizontalmente */
+  text-align: center; /* garante que o texto dentro fique centralizado */
+}
+
+.preco-card.destaque {
+  background-color: #3d37ff;
+  border-color: #3d37ff;
+  font-size: 1rem;
+}
+
+
+.lista-valor li {
+  margin-bottom: 0.5rem;
+}
+
+.lista-valor li strong {
+  color: var(--branco);
+}
+
+.valor-total {
+  font-size: 1.1rem;
+  color: var(--azul);
+  margin-bottom: 2rem;
+}
+
+.frase-desconto {
+  font-size: 1rem;
+  color: var(--branco);
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.mini-secao {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  border-left: 4px solid var(--azul);
+  padding: 1.5rem;
+  margin: 1rem auto 2rem auto;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #3d37ff10;
+  color: var(--branco);
+  text-align: left;
+}
+
+.mini-secao.oferta-lancamento {
+  text-align: center;
+  background: linear-gradient(135deg, #0f1115, #13151b);
+  background-size: 200% 200%;
+  animation: glowMove 6s ease infinite;
+  border: 1px solid #00e0ff88;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 18px #3d37ff;
+  margin-top: 1.5rem;
+}
+
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.mini-secao.oferta-lancamento .preco {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mini-secao.oferta-lancamento .preco-avista {
+  font-size: 1.3rem;
+  color: var(--branco);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+
+.mini-secao.oferta-lancamento:hover {
+  transform: scale(1.015);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 18px #3d37ff;
+}
+
+.selo-oferta {
+  background-color: #00b3ca;
+  color: #000;
+  display: inline-block;
+  padding: 0.15rem 0.65rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+} 
+
+.mini-secao.garantia {
+  border-left-color: var(--azul);
+}
+
+.mini-secao h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--azul);
+}
+
+.mini-secao p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--cinza-claro);
+}
+
+.mini-secao p strong {
+  color: var(--branco);
+}
+
+.btn-cta.destaque {
+  margin-top: 2rem;
+}
+
+/* SEÇÃO 11 - FAQ */
+.faq-item {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #3d37ff10;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.faq-pergunta {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--azul);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-pergunta:hover {
+  background-color: #1a1a1a;
+}
+
+.faq-resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1.2rem;
+}
+
+.faq-resposta p {
+  font-size: 0.95rem;
+  color: var(--cinza-claro);
+  line-height: 1.5;
+  padding-top: 0.8rem;
+}
+
+.faq-pergunta {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem; /* espaço para o ícone */
+}
+
+.faq-icone {
+  position: absolute;
+  right: 1rem;
+  font-size: 1rem;
+  color: var(--azul);
+  transition: transform 0.3s ease;
+}
+
+/* SEÇÃO 12 - Final Emocional */
+.secao-final {
+  background: transparent;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: var(--branco);
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in-up.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.linha-azul {
+  width: 80px;
+  height: 3px;
+  background: var(--azul);
+  margin: 1rem auto 2rem auto;
+  box-shadow: 0 0 12px var(--azul);
+}
+
+
+.titulo-final {
+  font-size: 2.2rem;
+  color: var(--azul);
+  margin-bottom: 1.5rem;
+}
+
+.subtitulo-final {
+  font-size: 1.2rem;
+  color: var(--branco);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.texto-final {
+  font-size: 1rem;
+  color: var(--cinza-claro);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.reforco-emocional {
+  font-size: 1rem;
+  color: var(--azul);
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+
+.btn-cta.btn-final {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 1rem 2.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--branco);
+  background-color: var(--azul);
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 18px #3d37ff80;
+  transition: all 0.3s ease;
+}
+
+.btn-cta.btn-final:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 24px #3d37ff;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 18px #3d37ff80; }
+  50% { transform: scale(1.03); box-shadow: 0 0 25px #3d37ff; }
+}
+.btn-final {
+  animation: pulse 2.2s infinite;
+}
+
+.pos-botao {
+  font-style: italic;
+  color: var(--azul-claro);
+  opacity: 0.9;
+}
+
+/* RODAPÉ FINAL */
+.rodape {
+  background-color: transparent;
+  color: #bbb;
+  padding: 0rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.rodape .icones-sociais {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.rodape .icones-sociais a {
+  color: #00bfff;
+  transition: transform 0.2s ease;
+}
+
+.rodape .icones-sociais a:hover {
+  transform: scale(1.2);
+}
+
+.rodape i {
+  width: 28px;
+  height: 28px;
+}
